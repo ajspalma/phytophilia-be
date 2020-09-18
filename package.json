@@ -1,0 +1,19 @@
+{
+  "name": "phytophilia-be",
+  "version": "1.0.0",
+  "description": "Back-end side of simple web app for people who loves plants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plants",
+    "back-end",
+    "server-side"
+  ],
+  "author": "Ashley Johnson S. Palma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
