@@ -1,9 +1,19 @@
 const express = require('express');
+const fetch = require('node-fetch');
+const dotenv = require('dotenv');
+
+dotenv.config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
+const trefleAPIKey = process.env.TREFLE_API_KEY || '';
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    fetch(`https://trefle.io/api/v1/plants?token=${trefleAPIKey}`)
+        .then(response => response.json())
+        .then(data => {
+            res.send(data);
+        });
+    
 });
 
 app.listen(port, () => {

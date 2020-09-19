@@ -1,0 +1,2 @@
+Installed node-fetch package because fetch API is not implemented in Node
+- https://stackoverflow.com/questions/48433783/referenceerror-fetch-is-not-defined
