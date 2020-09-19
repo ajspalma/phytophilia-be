@@ -1,2 +1,8 @@
 Installed node-fetch package because fetch API is not implemented in Node
 - https://stackoverflow.com/questions/48433783/referenceerror-fetch-is-not-defined
+
+
+Use dotenv package to read .env file for parsing the Environment Variables 
+- https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
+- Also, make dotenv package as a dev dependency instead so it would not be included
+    under runtime dependency. 
